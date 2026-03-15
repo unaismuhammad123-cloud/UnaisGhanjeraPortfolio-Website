@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            color: white;
+            border-radius: 5px;
+        }
+        form { max-width: 600px; margin: 50px auto; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><span> Contact</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+                  <li><a href="skill.html">Skill</a></li>
+            <li><a href="contact.html" class="highlight">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section style="padding: 80px 8%; text-align: center;">
+        <h2>Get In <span class="highlight">Touch</span></h2>
+        <p style="color: #8b949e;">Feel free to reach out! You can contact me. </p>
+
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="6" placeholder="Message"></textarea>
+            <button type="submit" class="primary-btn" style="width: 20%;">Send</button>
+        </form>
+    </section>
+</body>
+</html>
