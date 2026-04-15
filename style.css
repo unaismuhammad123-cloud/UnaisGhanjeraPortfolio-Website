@@ -2,19 +2,251 @@
 * {
     margin: 0;
     padding: 0;
+    text-align: center;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #0d1117; /* Dark Background */
-    color: #ffffff;
+    background-color: #93acf6;
+    /* Dark Background */
+    color: white;
     line-height: 1.6;
 }
 
+
+/* ================= GLOBAL ================= */
+
+/* Highlight text */
 .highlight {
-    color: #00d2ff; /* Teal/Cyan color from your image */
+    color: #2170cb;
 }
+
+/* Common Section Spacing */
+section {
+    padding: 80px 8%;
+}
+
+/* Social meda section */
+.social-section {
+    text-align: left;
+    padding: 25px 30%;
+
+}
+
+.social-section h2 {
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #1b2735;
+    color: wheat;
+    font-size: 22px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.icon:hover {
+    transform: translateY(-8px);
+}
+
+.facebook:hover {
+    background: #1877f2;
+}
+
+.linkedin:hover {
+    background: #0077b5;
+}
+
+.instagram:hover {
+    background: #e1306c;
+}
+
+
+
+/* Common Card */
+.project-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================= BLOG ================= */
+
+.blog-section h2 {
+    margin-bottom: 40px;
+}
+
+/* Grid layout (used in blog + skills) */
+.project-grid,
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Blog image */
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Blog heading */
+.project-card h3 {
+    margin: 10px 0;
+}
+
+/* Read more link */
+.read-more {
+    color: #00d2ff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* ================= ABOUT ================= */
+
+.about-section {
+    padding: 100px 8%;
+}
+
+.about-section h2 {
+    font-size: 3rem;
+}
+
+/* Layout */
+.about-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Text */
+.about-text {
+    flex: 1;
+    color: #201f1f;
+    font-size: 1.1rem;
+}
+
+.about-text h6 {
+    margin-top: 15px;
+    color: #5723ab;
+    font-size: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+/* Skills list inside About */
+.skills-list {
+    list-style: none;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Image */
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 80%;
+    border-radius: 20px;
+    border: 2px solid #00d2ff;
+}
+
+/* Button link */
+.project-link {
+    display: inline-block;
+    margin: 15px 0;
+    color: #00d2ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ================= SKILLS ================= */
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+/* Skill block */
+.skill {
+    margin-top: 20px;
+}
+
+/* Progress bar */
+.progress-bar {
+    background: #2c7eb1;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/* Progress fill */
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    background: #00d2ff;
+}
+
+/* Skill Levels */
+.progress.html {
+    width: 95%;
+}
+
+.progress.js {
+    width: 85%;
+}
+
+.progress.react {
+    width: 80%;
+}
+
+.progress.python {
+    width: 80%
+}
+
+.progress.figma {
+    width: 90%;
+}
+
+.progress.git {
+    width: 85%;
+}
+
+.highlight {
+    color: #00d2ff;
+    /* Teal/Cyan color from your image */
+}
+
 .logo-image {
     position: absolute;
     top: 0;
@@ -27,7 +259,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background: rgba(13, 17, 23, 0.95);
+    background: rgba(102, 123, 229, 0.95);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -49,12 +281,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ccc;
+    color: #222121;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #00d2ff;
+    color: #125d6e;
 }
 
 /* Hero Section */
@@ -73,7 +306,7 @@ nav ul li a:hover {
 
 .hero-content p {
     font-size: 1.2rem;
-    color: #8b949e;
+    color: #151617;
     max-width: 500px;
     margin-bottom: 20px;
 }
@@ -90,8 +323,8 @@ nav ul li a:hover {
 
 .secondary-btn {
     background: transparent;
-    border: 1px solid #00d2ff;
-    color: #00d2ff;
+    border: 1px solid #477984;
+    color: #16191a;
     padding: 12px 25px;
     border-radius: 5px;
     cursor: pointer;
@@ -131,4 +364,20 @@ nav ul li a:hover {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #d8dbdf;
+    border: 1px solid #30363d;
+    color: white;
+    border-radius: 5px;
+}
+
+form {
+    max-width: 600px;
+    margin: 50px auto;
 }

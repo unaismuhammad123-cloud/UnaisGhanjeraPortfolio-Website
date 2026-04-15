@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
 
     <nav>
         <div class="logo"><span>M.Unais</span></div>
         <ul>
             <li><a href="#" class="btn-home">Home</a>
-                &nbsp;  &nbsp;
-               <a href="about.html"> About </a>
-               &nbsp;  &nbsp;
+                &nbsp; &nbsp;
+                <a href="about.html"> About </a>
+                &nbsp; &nbsp;
                 <a href="blog.html"> Blog </a>
-                &nbsp;  &nbsp;
-                <a href="skill.html">Skills</a>
-                &nbsp;  &nbsp;
-                 <a href="contact.html"> Contact </a>
+                &nbsp; &nbsp;
+                <a href="skills.html">Skills</a>
+                &nbsp; &nbsp;
+                <a href="contact.html"> Contact </a>
             </li>
         </ul>
     </nav>
@@ -29,38 +32,59 @@
         <div class="hero-content">
             <h1>Hi, I'm <span class="highlight">Muhammad Unais</span></h1>
             <p>Front-end developer with strong skills in HTML, CSS, and JavaScript.
-                 He builds responsive and user-friendly websites and is always improving his design and coding abilities.
-                 He enjoys learning new technologies and creating clean, modern interfaces.</p>
+                He builds responsive and user-friendly websites and is always improving his design and coding abilities.
+                He enjoys learning new technologies and creating clean, modern interfaces.</p>
             <div class="hero-btns">
-                <button class="primary-btn">View My Work</button>
-                <button class="secondary-btn">Download CV</button>
+                <button type="button" class="primary-btn">View My Work</button>
+                <button type="button" class="secondary-btn" onclick="downloadCV()">Download CV</button>
             </div>
         </div>
         <div class="hero-img">
             <img src="image.jpeg" width="450" height="400" alt="Profile">
         </div>
     </section>
+    <section class="social-section">
+        <h2>Connect With <span class="highlight">Me</span></h2>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/muhammad.unais.7737769" target="_blank" rel="noopener"
+                class="icon facebook" aria-label="Facebook Profile">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/muhammad-unais-0261293bb?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank" rel="noopener" class="icon linkedin" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://www.instagram.com/nasi3i?igsh=MXI3Z2RmcjNrMDFkOA==" target="_blank" rel="noopener"
+                class="icon instagram" aria-label="Instagram Profile">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
 
     <section class="projects">
         <h2>Recent <span class="highlight">Projects</span></h2>
         <div class="project-grid">
-            <div class="project-card">
-                <img src="logo.jpeg" alt="Project 1">
-                <h3>Building weather app</h3>
-                <p>HTMl ,CSS, JavaScript</p>
-            </div>
-            <div class="project-card">
-                <img src="logo.jpeg" alt="Project 2">
-                <h3>Fund-Management-System</h3>
-                <p>HTML ,CSS & JavaScript</p>
-            </div>
-            <div class="project-card">
-                <img src="logo.jpeg" alt="Project 3">
-                <h3>Portfolio Design</h3>
-                <p>Figma to HTML/CSS</p>
-            </div>
+        <div class="project-card">
+            <img src="Portfolio.image.jpeg" alt="Project 1">
+            <h3>Portfolio Design</h3>
+            <p>Figma to HTML/CSS</p>
+        </div>
+        <div class="project-card">
+            <img src="sms.image.jpeg" alt="Project 2">
+            <h3>Student Management System</h3>
+            <p>HTMl ,CSS, JavaScript</p>
+        </div>
+        <div class="project-card">
+            <img src="ai tranlator.image.jpeg" alt="Project 3">
+            <h3>AI Translator</h3>
+            <p>HTML ,CSS & JavaScript and Backend Python</p>
+        </div>
         </div>
     </section>
-
+    <script src="script.js"></script>
 </body>
+
 </html>

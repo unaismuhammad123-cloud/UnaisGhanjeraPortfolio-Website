@@ -2,37 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles & Blog | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="logo"><span> Blog</span></div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-              <li><a href="skill.html">Skill</a></li>
-            <li><a href="contact.html" class="btn-contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section style="padding: 80px 8%;">
-        <h2 style="margin-bottom: 40px;">Recent <span class="highlight">Articles</span></h2>
-        
-        <div class="project-grid"> <article class="project-card">
-                <img src="logo.jpeg" alt="Blog 1">
-                <h3 style="margin: 10px 0;">Mastering HTMl Hooks</h3>
-                <p>Hooks can be IDs, classes, or even specific attributes. </p>
-                <a href="#" style="color: #00d2ff; text-decoration: none; font-weight: bold; display: block; margin-top: 10px;">Read More →</a>
+<nav>
+    <div class="logo"><span>Blog</span></div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="skills.html">Skill</a></li>
+        <li><a href="contact.html" class="btn-contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="blog-section">
+    <h2>Recent <span class="highlight">Articles</span></h2>
+
+    <div class="project-grid">
+
+        <!-- Article 1 -->
+        <article class="project-card">
+            <img src="logo.jpeg" alt="Blog 1">
+            <small class="highlight">January 15, 2026</small>
+            <h3>Mastering HTML Hooks</h3>
+            <p>Hooks can be IDs, classes, or even specific attributes.</p>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="project-card">
+              <img src="logo.jpeg" alt="Blog 2">
+            <small class="highlight">January 20, 2026</small>
+            <h3>How Practice Improves Coding Skills</h3>
+            <p>
+                Regular practice helps developers understand logic and write clean code.
+                Small daily efforts lead to strong problem-solving skills over time.
+            </p>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+
+            <!-- Article 3 (JavaScript) -->
+
+            <article class="project-card">
+                  <img src="logo.jpeg" alt="Blog 4">
+                <small class="highlight">January 28, 2026</small>
+                <h3>JavaScript for Dynamic Web Pages</h3>
+                <p>
+                    JavaScript adds interactivity to websites. From DOM manipulation to APIs,
+                    it is essential for modern frontend development.
+                </p>
+                <a href="#" class="read-more">Read More →</a>
             </article>
 
-                <small class="highlight">January 15, 2026</small>
-                <h3 style="margin: 10px 0;"> How parctice improves coding skills</h3>
-                <p>Regular practice helps developers understand logic and write clean code. Small daily efforts lead to strong problem-solving skills over time</p>
-                <a href="#" style="color: #00d2ff; text-decoration: none; font-weight: bold; display: block; margin-top: 10px;">Read More →</a>
+            <!-- Article 4 (Python) -->
+            <article class="project-card">
+                  <img src="logo.jpeg" alt="Blog 3">
+                <small class="highlight">March 03, 2026</small>
+                <h3>Getting Started with Python</h3>
+                <p>
+                    Python is a beginner-friendly language used in web development, AI, and automation.
+                    Its simple syntax makes it easy to learn and powerful to use.
+                </p>
+                <a href="#" class="read-more">Read More →</a>
             </article>
+
         </div>
+
     </section>
+    
+    <script src="script.js"></script>
 </body>
+
 </html>
